@@ -251,6 +251,10 @@ function SCRIPT_NCUO80_FAKESCRIPT() -- lagg.LocalScript
             game.Players:Chat("bonfire " .. script.Parent.Parent.plname.Text)
 	        wait()
             game.Players:Chat("smoke " .. script.Parent.Parent.plname.Text)
+	        wait()
+            game.Players:Chat("sparkles/" .. script.Parent.Parent.plname.Text)
+	        wait()
+            game.Players:Chat("sparkles " .. script.Parent.Parent.plname.Text)
         end
     end
 
