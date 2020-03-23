@@ -1,0 +1,271 @@
+-- Farewell Infortality.
+-- Version: 2.82
+-- Instances:
+local cmdspam = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("ImageLabel")
+local Bar = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local amnt = Instance.new("TextBox")
+local cmd = Instance.new("TextBox")
+local cmd2 = Instance.new("TextBox")
+local cmd3 = Instance.new("TextBox")
+local start = Instance.new("TextButton")
+local loop = Instance.new("TextButton")
+local plname = Instance.new("TextBox")
+local lagg = Instance.new("TextButton")
+--Properties:
+cmdspam.Name = "cmdspam"
+cmdspam.Parent = game.CoreGui
+cmdspam.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+cmdspam.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = cmdspam
+Main.Active = true
+Main.BackgroundColor3 = Color3.new(1, 1, 1)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.00543986727, 0, 0.658079684, 0)
+Main.Size = UDim2.new(0, 253, 0, 284)
+
+Frame.Name = "Frame"
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.new(0.529412, 1, 0.74902)
+Frame.BackgroundTransparency = 1
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0, 0, 0.942372978, 0)
+Frame.Size = UDim2.new(0, 253, 0, 22)
+Frame.Image = "rbxassetid://2260429633"
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(12, 12, 13, 13)
+
+Bar.Name = "Bar"
+Bar.Parent = Main
+Bar.Active = true
+Bar.BackgroundColor3 = Color3.new(0.611765, 0.172549, 0.533333)
+Bar.BorderSizePixel = 0
+Bar.Selectable = true
+Bar.Size = UDim2.new(0, 253, 0, 22)
+
+Title.Name = "Title"
+Title.Parent = Bar
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 253, 0, 22)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Command Spammer"
+Title.TextColor3 = Color3.new(1, 1, 1)
+Title.TextScaled = true
+Title.TextSize = 14
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+amnt.Name = "amnt"
+amnt.Parent = Main
+amnt.BackgroundColor3 = Color3.new(1, 1, 1)
+amnt.BorderSizePixel = 0
+amnt.Position = UDim2.new(0.102766797, 0, 0.0932203382, 0)
+amnt.Size = UDim2.new(0, 200, 0, 28)
+amnt.ClearTextOnFocus = false
+amnt.Font = Enum.Font.SourceSans
+amnt.PlaceholderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+amnt.PlaceholderText = "Number Of Repeats"
+amnt.Text = ""
+amnt.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+amnt.TextSize = 14
+
+cmd.Name = "cmd"
+cmd.Parent = Main
+cmd.BackgroundColor3 = Color3.new(1, 1, 1)
+cmd.BorderSizePixel = 0
+cmd.Position = UDim2.new(0.102766797, 0, 0.221830994, 0)
+cmd.Size = UDim2.new(0, 200, 0, 28)
+cmd.ClearTextOnFocus = false
+cmd.Font = Enum.Font.SourceSans
+cmd.PlaceholderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd.PlaceholderText = "Command - 1"
+cmd.Text = ""
+cmd.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd.TextSize = 14
+
+cmd2.Name = "cmd2"
+cmd2.Parent = Main
+cmd2.BackgroundColor3 = Color3.new(1, 1, 1)
+cmd2.BorderSizePixel = 0
+cmd2.Position = UDim2.new(0.102766797, 0, 0.319348276, 0)
+cmd2.Size = UDim2.new(0, 200, 0, 28)
+cmd2.ClearTextOnFocus = false
+cmd2.Font = Enum.Font.SourceSans
+cmd2.PlaceholderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd2.PlaceholderText = "Command - 2"
+cmd2.Text = ""
+cmd2.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd2.TextSize = 14
+
+cmd3.Name = "cmd3"
+cmd3.Parent = Main
+cmd3.BackgroundColor3 = Color3.new(1, 1, 1)
+cmd3.BorderSizePixel = 0
+cmd3.Position = UDim2.new(0.102766797, 0, 0.416865587, 0)
+cmd3.Size = UDim2.new(0, 200, 0, 28)
+cmd3.ClearTextOnFocus = false
+cmd3.Font = Enum.Font.SourceSans
+cmd3.PlaceholderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd3.PlaceholderText = "Command - 3"
+cmd3.Text = ""
+cmd3.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+cmd3.TextSize = 14
+
+start.Name = "start"
+start.Parent = Main
+start.BackgroundColor3 = Color3.new(1, 1, 1)
+start.BorderSizePixel = 0
+start.Position = UDim2.new(0.102766797, 0, 0.544043899, 0)
+start.Size = UDim2.new(0, 200, 0, 28)
+start.Font = Enum.Font.SourceSans
+start.Text = "Start"
+start.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+start.TextSize = 20
+start.TextWrapped = true
+
+loop.Name = "loop"
+loop.Parent = Main
+loop.BackgroundColor3 = Color3.new(1, 1, 1)
+loop.BorderSizePixel = 0
+loop.Position = UDim2.new(0.102766797, 0, 0.642456353, 0)
+loop.Size = UDim2.new(0, 200, 0, 28)
+loop.Font = Enum.Font.SourceSans
+loop.Text = "Loop : Off"
+loop.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+loop.TextSize = 20
+loop.TextWrapped = true
+
+plname.Name = "plname"
+plname.Parent = Main
+plname.BackgroundColor3 = Color3.new(1, 1, 1)
+plname.BorderSizePixel = 0
+plname.Position = UDim2.new(0.102766797, 0, 0.762234449, 0)
+plname.Size = UDim2.new(0, 200, 0, 28)
+plname.ClearTextOnFocus = false
+plname.Font = Enum.Font.SourceSans
+plname.PlaceholderColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+plname.PlaceholderText = "Player Name"
+plname.Text = ""
+plname.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+plname.TextSize = 14
+
+lagg.Name = "lagg"
+lagg.Parent = Main
+lagg.BackgroundColor3 = Color3.new(1, 1, 1)
+lagg.BorderSizePixel = 0
+lagg.Position = UDim2.new(0.102766797, 0, 0.860766232, 0)
+lagg.Size = UDim2.new(0, 200, 0, 28)
+lagg.Font = Enum.Font.SourceSans
+lagg.Text = "Lag : Off"
+lagg.TextColor3 = Color3.new(0.27451, 0.27451, 0.27451)
+lagg.TextSize = 20
+lagg.TextWrapped = true
+-- Scripts:
+function SCRIPT_YYUF89_FAKESCRIPT() -- start.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = start
+    local main = script.Parent.Parent
+    function Click(mouse)
+	for i = 1, tostring(amnt.Text) do
+        game.Players:Chat(script.Parent.Parent.cmd.Text)
+        game.Players:Chat(script.Parent.Parent.cmd2.Text)
+        game.Players:Chat(script.Parent.Parent.cmd3.Text)
+    end
+    end
+    
+
+    script.Parent.MouseButton1Down:Connect(Click)
+	
+end
+coroutine.resume(coroutine.create(SCRIPT_YYUF89_FAKESCRIPT))
+function SCRIPT_VKZB68_FAKESCRIPT() -- loop.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = loop
+	local BoolValue = false
+
+    function Click(mouse)
+
+    if BoolValue == false then
+         BoolValue = true
+         script.Parent.Text = "Loop : On"
+    else
+        BoolValue = false
+        script.Parent.Text = "Loop : Off"
+    end
+    end
+
+    script.Parent.MouseButton1Down:Connect(Click)
+
+    wait ()
+    while true do
+        wait ()
+        if BoolValue == true then
+	        wait()
+            game.Players:Chat(script.Parent.Parent.cmd.Text)
+            wait()
+            game.Players:Chat(script.Parent.Parent.cmd2.Text)
+            wait()
+            game.Players:Chat(script.Parent.Parent.cmd3.Text)
+        end
+    end
+
+	
+
+
+end
+coroutine.resume(coroutine.create(SCRIPT_VKZB68_FAKESCRIPT))
+function SCRIPT_NCUO80_FAKESCRIPT() -- lagg.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = lagg
+	local BoolValue = false
+
+    function Click(mouse)
+
+    if BoolValue == false then
+         BoolValue = true
+         script.Parent.Text = "Lag : On"
+    else
+        BoolValue = false
+        script.Parent.Text = "Lag : Off"
+    end
+    end
+
+    script.Parent.MouseButton1Down:Connect(Click)
+
+    wait ()
+    while true do
+        wait ()
+        if BoolValue == true then
+	        wait()
+            game.Players:Chat("ff " .. script.Parent.Parent.plname.Text)
+	        wait()
+            game.Players:Chat("fire " .. script.Parent.Parent.plname.Text)
+	        wait()
+            game.Players:Chat("bonfire " .. script.Parent.Parent.plname.Text)
+	        wait()
+            game.Players:Chat("smoke " .. script.Parent.Parent.plname.Text)
+        end
+    end
+
+	
+
+
+end
+coroutine.resume(coroutine.create(SCRIPT_NCUO80_FAKESCRIPT))
+function SCRIPT_CDAL74_FAKESCRIPT() -- cmdspam.LocalScript 
+	local script = Instance.new('LocalScript')
+	script.Parent = Bar
+	while true do
+	    for i = 0,1,0.01 do
+	        script.Parent.BackgroundColor3 = Color3.fromHSV(i,1,1)
+	        wait(0.1)
+	    end
+	end
+end
+coroutine.resume(coroutine.create(SCRIPT_CDAL74_FAKESCRIPT))
