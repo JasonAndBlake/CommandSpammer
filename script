@@ -27,6 +27,7 @@ Main.BackgroundColor3 = Color3.new(1, 1, 1)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.00543986727, 0, 0.658079684, 0)
 Main.Size = UDim2.new(0, 253, 0, 284)
+Main.Draggable = true
 
 Frame.Name = "Frame"
 Frame.Parent = Main
